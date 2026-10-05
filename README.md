@@ -14,3 +14,5 @@ Landing page mobile-first criada para apresentação comercial da Antonio Grill 
 - Navbar inferior fixa
 
 Projeto estático pronto para Vercel.
+
+Deploy automático Vercel configurado.

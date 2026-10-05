@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <title>Antonio Grill Churrascaria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-btn" aria-label="Abrir menu" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+      <img class="brand-logo" src="assets/logo.webp" alt="Antonio Grill Churrascaria" />
+      <div class="top-actions">
+        <button class="icon-btn line-icon" aria-label="Buscar" id="searchBtn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+        </button>
+        <button class="icon-btn line-icon cart-btn" aria-label="Carrinho" id="cartBtn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.3 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 7H6"></path><circle cx="9.5" cy="19" r="1"></circle><circle cx="18" cy="19" r="1"></circle></svg>
+          <b id="cartCount">0</b>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="assets/hero.webp" alt="Prato da Antonio Grill" />
+        <div class="hero-overlay"></div>
+        <div class="hero-copy">
+          <span>Sabor de</span>
+          <h1>VERDADE</h1>
+          <p>Preço que cabe no bolso!</p>
+          <a class="primary-cta" href="https://wa.me/5588988195960" target="_blank" rel="noopener">WhatsApp <strong>Faça seu pedido</strong> <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="section compact-section">
+        <div class="section-title-row">
+          <h2><span class="accent">●</span> Destaques do dia</h2>
+          <a href="#cardapio">Ver todos</a>
+        </div>
+        <div class="featured-row">
+          <article class="mini-card">
+            <img src="assets/picanha.webp" alt="Picanha executiva" />
+            <div><h3>Picanha Executiva</h3><button class="add-btn" data-item="Picanha Executiva">+</button></div>
+          </article>
+          <article class="mini-card">
+            <img src="assets/tilapia.webp" alt="Tilápia frita" />
+            <div><h3>Tilápia Frita</h3><button class="add-btn" data-item="Tilápia Frita">+</button></div>
+          </article>
+          <article class="mini-card">
+            <img src="assets/arroz-brocolis.webp" alt="Arroz de brócolis" />
+            <div><h3>Arroz de Brócolis</h3><button class="add-btn" data-item="Arroz de Brócolis">+</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section categories" id="cardapio">
+        <div class="section-title-row no-link"><h2>Cardápio</h2></div>
+        <div class="category-strip" role="tablist" aria-label="Categorias do cardápio">
+          <button class="category active" data-target="executivos">Executivos</button>
+          <button class="category" data-target="acompanhamentos">Acompanhamentos</button>
+          <button class="category" data-target="linguicas">Linguiças</button>
+          <button class="category" data-target="carnes">Carnes</button>
+          <button class="category" data-target="peixes">Peixes</button>
+        </div>
+      </section>
+
+      <section class="menu-section" id="executivos">
+        <div class="menu-heading"><h2>Executivos</h2><a href="#">Ver todos</a></div>
+        <div class="food-grid">
+          <article class="food-card">
+            <img src="assets/picanha.webp" alt="Picanha executiva" />
+            <div class="food-info"><div><h3>Picanha Executiva</h3><p>Prato completo, feito na hora.</p></div><button class="add-btn" data-item="Picanha Executiva">+</button></div>
+          </article>
+          <article class="food-card">
+            <img src="assets/tilapia.webp" alt="Tilápia frita" />
+            <div class="food-info"><div><h3>Tilápia Frita</h3><p>Tilápia dourada com acompanhamentos.</p></div><button class="add-btn" data-item="Tilápia Frita">+</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section" id="acompanhamentos">
+        <div class="menu-heading"><h2>Acompanhamentos</h2><a href="#">Ver todos</a></div>
+        <div class="food-grid">
+          <article class="food-card">
+            <img src="assets/arroz-brocolis.webp" alt="Arroz de brócolis" />
+            <div class="food-info"><div><h3>Arroz de Brócolis</h3><p>Arroz soltinho com brócolis.</p></div><button class="add-btn" data-item="Arroz de Brócolis">+</button></div>
+          </article>
+          <article class="food-card">
+            <img src="assets/picanha.webp" alt="Batata frita" />
+            <div class="food-info"><div><h3>Batata Frita</h3><p>Porção crocante para acompanhar.</p></div><button class="add-btn" data-item="Batata Frita">+</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section" id="linguicas">
+        <div class="menu-heading"><h2>Linguiças</h2><a href="#">Ver todos</a></div>
+        <div class="food-grid">
+          <article class="food-card">
+            <img src="assets/linguica-toscana.webp" alt="Linguiça toscana" />
+            <div class="food-info"><div><h3>Linguiça Toscana</h3><p>Assada na brasa e bem dourada.</p></div><button class="add-btn" data-item="Linguiça Toscana">+</button></div>
+          </article>
+          <article class="food-card">
+            <img src="assets/linguica-cuiabana.webp" alt="Linguiça cuiabana" />
+            <div class="food-info"><div><h3>Linguiça Cuiabana</h3><p>Suculenta e preparada na brasa.</p></div><button class="add-btn" data-item="Linguiça Cuiabana">+</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="promo-card" id="carnes">
+        <img src="assets/promo-porco.webp" alt="Promoção carne de porco assada na brasa" />
+        <div class="promo-copy"><span>Promoção</span><strong>Carne de porco na brasa</strong><b>R$ 8,00 / 100g</b></div>
+      </section>
+
+      <section class="info-card" id="peixes">
+        <div><span>Antonio Grill</span><h2>Boa Viagem, Ceará</h2><p>Comida feita na brasa, pratos executivos e acompanhamentos.</p></div>
+        <a href="https://wa.me/5588988195960" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegação principal">
+      <a class="active" href="#top"><span>⌂</span>Início</a>
+      <a href="#cardapio"><span>☷</span>Cardápio</a>
+      <button id="ordersBtn"><span>▣</span>Pedidos</button>
+      <a href="https://wa.me/5588988195960" target="_blank" rel="noopener"><span>◉</span>Contato</a>
+    </nav>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-head"><img src="assets/logo.webp" alt="Antonio Grill" /><button id="closeDrawer">×</button></div>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#executivos">Executivos</a>
+      <a href="#acompanhamentos">Acompanhamentos</a>
+      <a href="#linguicas">Linguiças</a>
+      <a href="https://wa.me/5588988195960" target="_blank" rel="noopener">Contato</a>
+    </aside>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="toast" id="toast" role="status"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
